@@ -1,1 +1,67 @@
+/* Reseta margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Configurações gerais da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Título Principal */
+h1 {
+    color: #1b4332; /* Tom verde escuro moderno */
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+/* Subtítulo */
+h2 {
+    color: #40916c;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #d8f3dc;
+    padding-bottom: 10px;
+}
+
+/* Parágrafos do texto principal */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* Estilização da imagem */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Bloco dos dados do aluno / rodapé */
+p:nth-last-of-type(-n+4) {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+/* Destaque para o primeiro dado escolar */
+p:nth-last-of-type(4) {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px dashed #ccc;
+    font-weight: bold;
+}
