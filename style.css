@@ -1,45 +1,117 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agronegócio em Piên</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Zerar margens e marcações padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <main class="container">
-        <article class="noticia">
-            <header>
-                <h1>Agronegócio em Piên: Força do Campo Impulsiona a Economia Local</h1>
-                <h2>Tecnologia, sustentabilidade e agricultura familiar garantem o crescimento do setor no município</h2>
-            </header>
+/* Estilo geral da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
 
-            <section class="conteudo">
-                <p>O município de Piên, no sul do Paraná, destaca-se regionalmente pelo fortalecimento e pela diversificação de sua produção agrícola. Com vocação voltada ao pequeno e médio produtor, a cidade tem na agricultura familiar um dos seus principais pilares econômicos.</p>
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
 
-                <p>Cultivos como milho, feijão, olaria e hortaliças ganham espaço ao lado do cultivo do fumo, movimentando o comércio local e gerando renda no campo. Investimentos em técnicas de manejo sustentável e tecnologia agrícola têm garantido mais eficiência e sustentabilidade para a produção pienense.</p>
+/* Títulos */
+h1 {
+    color: #1b4332;
+    font-size: 2.1rem;
+    margin-bottom: 12px;
+    line-height: 1.25;
+}
 
-                <img src="img/agro.webp" alt="Vista do agronegócio e produção agrícola em Piên, Paraná">
-            </section>
+h2 {
+    color: #40916c;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #d8f3dc;
+    padding-bottom: 12px;
+}
 
-            <section class="interacao">
-                <button id="btn-curtir" class="btn-like">
-                    <span class="icone">❤️</span>
-                    <span class="texto">Curtir</span>
-                    <span id="contador-curtidas" class="contador">0</span>
-                </button>
-            </section>
-        </article>
+/* Parágrafos do texto principal */
+.conteudo p {
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+    text-align: justify;
+}
 
-        <footer class="dados-trabalho">
-            <p><strong>Data:</strong> 12/08/2026</p>
-            <p><strong>Colégio:</strong> Frederico Guilherme Giese</p>
-            <p><strong>Disciplina:</strong> Educação Digital</p>
-            <p><strong>Autor:</strong> André Ossovski de Lima</p>
-        </footer>
-    </main>
+/* Imagem */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    display: block;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+/* Seção Interativa - Botão de Curtida */
+.interacao {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+}
+
+.btn-like {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-like:hover {
+    background-color: #ffe6e6;
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+    transform: translateY(-2px);
+}
+
+.btn-like.curtido {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    border-color: #ff4d4d;
+}
+
+.contador {
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+.btn-like.curtido .contador {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Rodapé com as informações escolares */
+.dados-trabalho {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px dashed #cccccc;
+    font-size: 0.95rem;
+    color: #555555;
+}
+
+.dados-trabalho p {
+    margin-bottom: 5px;
+}
