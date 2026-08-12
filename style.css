@@ -1,67 +1,45 @@
-/* Reseta margens e espaçamentos padrão */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agronegócio em Piên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Configurações gerais da página */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f6f8;
-    color: #333333;
-    line-height: 1.6;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
+    <main class="container">
+        <article class="noticia">
+            <header>
+                <h1>Agronegócio em Piên: Força do Campo Impulsiona a Economia Local</h1>
+                <h2>Tecnologia, sustentabilidade e agricultura familiar garantem o crescimento do setor no município</h2>
+            </header>
 
-/* Título Principal */
-h1 {
-    color: #1b4332; /* Tom verde escuro moderno */
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    line-height: 1.2;
-}
+            <section class="conteudo">
+                <p>O município de Piên, no sul do Paraná, destaca-se regionalmente pelo fortalecimento e pela diversificação de sua produção agrícola. Com vocação voltada ao pequeno e médio produtor, a cidade tem na agricultura familiar um dos seus principais pilares econômicos.</p>
 
-/* Subtítulo */
-h2 {
-    color: #40916c;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 25px;
-    border-bottom: 2px solid #d8f3dc;
-    padding-bottom: 10px;
-}
+                <p>Cultivos como milho, feijão, olaria e hortaliças ganham espaço ao lado do cultivo do fumo, movimentando o comércio local e gerando renda no campo. Investimentos em técnicas de manejo sustentável e tecnologia agrícola têm garantido mais eficiência e sustentabilidade para a produção pienense.</p>
 
-/* Parágrafos do texto principal */
-p {
-    font-size: 1.1rem;
-    margin-bottom: 18px;
-    text-align: justify;
-}
+                <img src="img/agro.webp" alt="Vista do agronegócio e produção agrícola em Piên, Paraná">
+            </section>
 
-/* Estilização da imagem */
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-}
+            <section class="interacao">
+                <button id="btn-curtir" class="btn-like">
+                    <span class="icone">❤️</span>
+                    <span class="texto">Curtir</span>
+                    <span id="contador-curtidas" class="contador">0</span>
+                </button>
+            </section>
+        </article>
 
-/* Bloco dos dados do aluno / rodapé */
-p:nth-last-of-type(-n+4) {
-    font-size: 0.95rem;
-    color: #555555;
-    margin-bottom: 4px;
-    text-align: left;
-}
+        <footer class="dados-trabalho">
+            <p><strong>Data:</strong> 12/08/2026</p>
+            <p><strong>Colégio:</strong> Frederico Guilherme Giese</p>
+            <p><strong>Disciplina:</strong> Educação Digital</p>
+            <p><strong>Autor:</strong> André Ossovski de Lima</p>
+        </footer>
+    </main>
 
-/* Destaque para o primeiro dado escolar */
-p:nth-last-of-type(4) {
-    margin-top: 30px;
-    padding-top: 15px;
-    border-top: 1px dashed #ccc;
-    font-weight: bold;
-}
+    <script src="script.js"></script>
+</body>
+</html>
